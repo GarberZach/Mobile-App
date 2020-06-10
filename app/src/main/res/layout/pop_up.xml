@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+        >
+            <TextView
+                android:id="@+id/tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Grocery Item"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/groceryItem"
+                android:layout_below="@id/tile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Item"/>
+
+            <EditText
+                android:id="@+id/groceryQty"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/groceryItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Quantity"/>
+            <Button
+                android:layout_marginTop="6dp"
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:background="@color/button"
+                android:layout_below="@id/groceryQty"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
